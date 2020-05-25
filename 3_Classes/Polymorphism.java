@@ -7,33 +7,35 @@
 //          Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they
 //          also have their own implementation of an animal sound.
 
-class Animal {
+class PolymorphismAnimal {
 //class PolymorphismAnimal{
     public void animalSound() {
         System.out.println("The animal makes a sound");
     }
 }
 
-class Pig extends Animal {
+class PolyPig extends PolymorphismAnimal {
 //class Pig extends PolymorphismAnimal{
     public void animalSound() {
         System.out.println("The pig says: wee, wee");
     }
 }
 
-class Dog extends Animal {
+class PolyDog extends PolymorphismAnimal {
 //class Dog extends PolymorphismAnimal{
     public void animalSound() {
         System.out.println("The dog says: bow wow");
     }
 }
 
-class PolymorphismAnimal {
+class Polymorphism {
 //class test{
     public static void main(String[] args) {
-        Animal myAnimal = new Animal();
-        Animal myPig = new Pig();
-        Animal myDog = new Dog();
+        PolymorphismAnimal myAnimal = new PolymorphismAnimal();
+        //PolymorphismAnimal myPig = new PolyPig();
+        //PolymorphismAnimal myDog = new PolyDog();
+        PolyDog myDog = new PolyDog();
+        PolyPig myPig = new PolyPig();
 
         //PolymorphismAnimal myAnimal = new PolymorphismAnimal();
         //PolymorphismAnimal myPig = new Pig();
